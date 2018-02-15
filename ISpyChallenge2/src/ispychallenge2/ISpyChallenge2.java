@@ -10,7 +10,7 @@ public class ISpyChallenge2 {
         
         System.out.println("Enter the word: ");
         String word = scan.next();
-        System.out.println(isPalindrome(word));
+        System.out.println(isPalindrome(word.replaceAll(" ", "")));
     }
     public static boolean isPalindrome(String word){
         int last = word.length()-1;
